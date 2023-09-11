@@ -4,6 +4,10 @@ buildscript {
     repositories {
         jcenter()
     }
+    lintOptions {
+    abortOnError false
+}
+
     dependencies {
         classpath 'com.android.tools.build:gradle:2.3.1'
 
@@ -23,7 +27,4 @@ task clean(type: Delete) {
     delete rootProject.buildDir
 }
 
-lintOptions {
-    abortOnError false
-}
 
