@@ -21,7 +21,7 @@ jobs:
     - name: Build Release APK
       run: ./gradlew assembleRelease
     - name: Releasing using Hub
-      uses: DetErika/MyDiary@main
+      uses: DetErika/MyDiary@master
       env:
        GT_TOKEN: ${{ secrets.TOKEN }}
        APP_FOLDER: app
